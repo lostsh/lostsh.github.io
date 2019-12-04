@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+div{
+    min-width: 49%;
+}
+#message{
+    width: 60%;
+}
+.msgTchat{
+    padding: 1%;
+    border-left: 1px solid white;
+}
+.datation{
+    float: right;
+    font-size: xx-small;
+}
+.msgTchat p{
+    margin: 0 0 5px 0;
+    padding: 2% 1% 2% 1%;
+    border-radius: 7px;
+    background-color: rgb(100,0,0);
+    overflow: hidden;
+}
