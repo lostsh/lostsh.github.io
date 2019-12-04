@@ -3,13 +3,13 @@ body{
     justify-content: space-between;
 }
 div{
-    min-width: 49%;
+    min-width: 48vw;
 }
 #message{
     width: 60%;
 }
 .msgTchat{
-    padding: 1%;
+    padding: 1vw;
     border-left: 1px solid white;
 }
 .datation{
@@ -19,7 +19,10 @@ div{
 .msgTchat p{
     margin: 0 0 5px 0;
     padding: 2% 1% 2% 1%;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: #D10000;
     overflow: hidden;
+}
+.msgTchat .datation{
+    margin-top: 3px;
 }

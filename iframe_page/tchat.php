@@ -34,6 +34,7 @@
 
 
     echo '<div class="msgTchat">';
+    //|| $_SESSION['salleTchat'] == ''
     if($status != 'logged'){
         header('Location: index.php');
     }
@@ -45,6 +46,14 @@
     }
     $dataReq->closeCursor();
     echo '</div>';
+    //$status='logged';
+    //header('Refresh: 30;URL=tchat.php');
     ?>
   </body>
+  <script>
+  function updateOR(){
+    $(".msgTchat").load('test.php');
+    }
+    setTimeout('updateOR()',2000);
+  <scritp>
 </html>

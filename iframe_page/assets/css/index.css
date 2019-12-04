@@ -18,6 +18,7 @@ p a{
     border: 1px solid #D10000;
     background-color: #D10000;
     text-decoration: none;
+    color: white;
 }
 p a:hover{
     background-color: rgb(53, 53, 53);
