@@ -16,6 +16,7 @@ if(empty($_POST['room'] || $_POST['passwd'])){
         </body>
     </html>
     ';
+    session_destroy();
 }else{
 $dataReq=$dataBase->prepare('SELECT nom_salle, mdp FROM chat_room WHERE nom_salle = :room');
 $dataReq->bindValue(':room',$_POST['room'],PDO::PARAM_STR);//pour le type text ou varchar
@@ -24,12 +25,12 @@ $dataReq->execute();
 $data=$dataReq->fetch();
 
 if($data['mdp']==($_POST['passwd'])){
-    $status='logged';
+    $_SESSION['status']='logged';
     $_SESSION['salleTchat']=$data['nom_salle'];
     $_SESSION['pseudo'];
     include("tchat.php");
 }else{
-    $status='notLogged';
+    $_SESSION['status']='notLogged';
     echo '
     <!DOCTYPE html>
     <html>

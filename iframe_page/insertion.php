@@ -7,7 +7,6 @@
         $dataReq->execute(array($_SERVER['REMOTE_ADDR'],$_SESSION['salleTchat'],$_POST['pseudo'],$_POST['text_message']));
     }
 
-    $status='logged';
     $_SESSION['pseudo']=$_POST['pseudo'];
     include("tchat.php");
 ?>

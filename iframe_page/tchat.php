@@ -3,8 +3,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>534RTCHM3</title>
-    <!--<link rel="stylesheet" href="assets/css/index.css">-->
+    <title>Hidden0ne</title>
     <link rel="stylesheet" href="assets/css/tchat.css">
   </head>
   <body>
@@ -30,17 +29,22 @@
     ';
 
     echo '<div class="msgTchat">';
-    if($status != 'logged'){
-        header('Location: index.html');
-    }
-    include("conn.php");
-    $dataReq = $dataBase->query('SELECT nom_salle_msg, pseudo, date_post, txt_msg, DATE_FORMAT(date_post, \'[%d/%m/%Y] - [%H:%i]\') AS date_post_fr FROM msg WHERE nom_salle_msg LIKE "'.$_SESSION['salleTchat'].'" ORDER BY date_post DESC LIMIT 0, 20');
+    if($_SESSION['status'] != 'logged'){
+      session_destroy();
+      header('Location: index.html');
+    }else if($_SESSION['status']=='logged'){
+      /*
+      include("conn.php");
+      $dataReq = $dataBase->query('SELECT nom_salle_msg, pseudo, date_post, txt_msg, DATE_FORMAT(date_post, \'[%d/%m/%Y] - [%H:%i]\') AS date_post_fr FROM msg WHERE nom_salle_msg LIKE "'.$_SESSION['salleTchat'].'" ORDER BY date_post DESC LIMIT 0, 20');
 
-    while($dataRecu = $dataReq->fetch() ){
-        echo '<p>'.'<span class="pseudo">'.htmlspecialchars($dataRecu['pseudo']).'</span> : '.htmlspecialchars($dataRecu['txt_msg']).'<span class="datation">'.htmlspecialchars($dataRecu['date_post_fr']).'</span>'.'</p>';
+      while($dataRecu = $dataReq->fetch() ){
+          echo '<p>'.'<span class="pseudo">'.htmlspecialchars($dataRecu['pseudo']).'</span> : '.htmlspecialchars($dataRecu['txt_msg']).'<span class="datation">'.htmlspecialchars($dataRecu['date_post_fr']).'</span>'.'</p>';
+      }
+      $dataReq->closeCursor();*/
+      include("updateTchat.php");
+      echo '</div>';
+      $_SESSION['status']='logged';
     }
-    $dataReq->closeCursor();
-    echo '</div>';
     ?>
   </body>
 </html>
