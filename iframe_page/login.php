@@ -12,7 +12,7 @@ if(empty($_POST['room'] || $_POST['passwd'])){
         </head>
         <body>
             <p>You probabily miss some information</p>
-            <p><a href="index.php">Retour</a></p>
+            <p><a href="index.html">Retour</a></p>
         </body>
     </html>
     ';
@@ -40,7 +40,7 @@ if($data['mdp']==($_POST['passwd'])){
         </head>
         <body>
             <p>Connextion Error. Incorrect information</p>
-            <p><a href="index.php">Retour</a></p>
+            <p><a href="index.html">Retour</a></p>
         </body>
     </html>
     ';

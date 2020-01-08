@@ -37,9 +37,8 @@ form p input{
     background-color: #2E3136;
     color: #99A6AD;
 }
-#loger form p input[type="email"], p input[type="password"]{
+#loger form p input[type="text"], p input[type="password"]{
     width: 18vw;
-    height: 4vh;
 }
 #loger form p:not(:nth-child(3)) input:focus{
     box-shadow: 5px 5px 0 #99A6AD;

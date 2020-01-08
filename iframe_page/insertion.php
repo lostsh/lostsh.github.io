@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("conn.php");
     
     if(!empty($_POST['room']) && !empty($_POST['pseudo']) && !empty($_POST['text_message'])){

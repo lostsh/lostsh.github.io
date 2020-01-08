@@ -28,7 +28,7 @@
         </p>
       </fieldset>  
     </form>
-    <p><a href="index.php">Log out</a></p>
+    <p><a href="index.html">Log out</a></p>
     </div>
     ';
 
@@ -36,7 +36,7 @@
     echo '<div class="msgTchat">';
     //|| $_SESSION['salleTchat'] == ''
     if($status != 'logged'){
-        header('Location: index.php');
+        header('Location: index.html');
     }
     include("conn.php");
     $dataReq = $dataBase->query('SELECT nom_salle_msg, pseudo, date_post, txt_msg, DATE_FORMAT(date_post, \'[%d/%m/%Y] - [%H:%i]\') AS date_post_fr FROM msg WHERE nom_salle_msg LIKE "'.$_SESSION['salleTchat'].'" ORDER BY date_post DESC LIMIT 0, 20');
