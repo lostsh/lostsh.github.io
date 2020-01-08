@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>534RTCHM3</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <!--<link rel="stylesheet" href="assets/css/index.css">-->
     <link rel="stylesheet" href="assets/css/tchat.css">
   </head>
   <body>
