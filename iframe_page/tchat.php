@@ -8,35 +8,11 @@
     <link rel="stylesheet" href="assets/css/tchat.css">
   </head>
   <body>
-    <!--
-  <div class="formPost">
-    <form action="insertion.php" method="post">
-      <fieldset>
-        <legend>Tchat</legend>
-        <p>
-          <label for="pseudo">Pseudo :</label>
-          <input id="pseudo" type="text" name="pseudo" autofocus value="<php echo $_SESSION['pseudo'] ?>">
-        </p>
-        <p>
-          <label for="message">Message :</label>
-          <input id="message" type="text" name="text_message">
-        </p>
-        <p><input hidden name="room" value="<php echo $_SESSION['salleTchat'] ?>"></p>
-        <p>
-          <input type="submit" value="Send">
-        </p>
-      </fieldset>  
-    </form>
-    <p><a href="index.html">Log out</a></p>
-    </div>
--->
     <?php
     
     echo '
     <div class="formPost">
     <form action="insertion.php" method="post">
-      <fieldset>
-        <legend>Tchat</legend>
         <p>
           <label for="pseudo">Pseudo :</label>
           <input id="pseudo" type="text" name="pseudo" value='.$_SESSION['pseudo'].' >
@@ -45,17 +21,13 @@
           <label for="message">Message :</label>
           <input id="message" type="text" autofocus name="text_message">
         </p>
-        <p><input hidden name="room" value="'.$_SESSION['salleTchat'].'"></p>
         <p>
           <input type="submit" value="Send">
         </p>
-      </fieldset>  
     </form>
     <p><a href="index.html">Log out</a></p>
     </div>
     ';
-    
-
 
     echo '<div class="msgTchat">';
     if($status != 'logged'){
@@ -69,14 +41,6 @@
     }
     $dataReq->closeCursor();
     echo '</div>';
-    //$status='logged';
-    //header('Refresh: 30;URL=tchat.php');
     ?>
   </body>
-  <script>
-  function updateOR(){
-    $(".msgTchat").load('test.php');
-    }
-    setTimeout('updateOR()',2000);
-  <scritp>
 </html>

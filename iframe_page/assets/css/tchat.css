@@ -1,9 +1,9 @@
 body{
     background-color: #2E3136;
-    display: flex;
-    justify-content: space-between;
-    color: white;
     font-family: monospace;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 a{
     border: 1px solid #99A6AD;
@@ -17,47 +17,70 @@ a:hover{
     color: #ffffff;
 }
 
-/*------------------------------*/
+@media screen and (max-width:900px){
+    body{
+        background-color: #2E3136;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+    }
 
-.formPost{
-    min-width: 48vw;
-    font-size: large;
+    /*------------------------------*/
+
+    .formPost{
+        min-width: 38vw;
+        font-size: large;
+    }
+
+    form p{
+        margin: 1vh 1vw 2vh 1vw;
+    }
+    form p input{
+        border: 1px solid #99A6AD;
+        background-color: #2E3136;
+        color: #99A6AD;
+    }
+    form p input[type="text"]:focus{
+        box-shadow: 5px 5px 0 #99A6AD;
+    }
+    form p input[type="submit"]:hover{
+        background-color: #99A6AD;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
+    /*------------------------------*/
+
+    .msgTchat{
+        border-left: 1px solid #99A6AD;
+        padding: 0 1vw 0 1vw;
+        width: 60vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .msgTchat p{
+        margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+        border: 1px solid #99A6AD;
+        padding: 1vh 1vw 1vh 1vw;
+        overflow: hidden;
+    }
+    .datation{
+        float: right;
+        font-size: xx-small;
+        margin-top: 1vh;
+    }
+
 }
 
-form p{
-    margin: 1vh 1vw 2vh 1vw;
-}
-form p input{
-    border: 1px solid #99A6AD;
-    background-color: #2E3136;
-    color: #99A6AD;
-}
-form p input[type="text"]:focus{
-    box-shadow: 5px 5px 0 #99A6AD;
-}
-form p input[type="submit"]:hover{
-    background-color: #99A6AD;
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-/*------------------------------*/
-
-.msgTchat{
-    border-left: 1px solid #99A6AD;
-    padding: 1vw;
-    width: 50vw;
-    /*height: 96vh;*/
-    height: 90vh;
-}
-.msgTchat p{
-    margin: 0.5vh 0.5vw 0.5vh 0.5vw;
-    border: 1px solid #99A6AD;
-    padding: 1vh 1vw 1vh 1vw;
-    overflow: hidden;
-}
-.msgTchat .datation{
-    float: right;
-    font-size: xx-small;
-    margin-top: 1vh;
+@media screen and (min-width:900px){
+    .formPost{
+        font-display: flex;
+        justify-content: space-evenly;
+        
+        widows: 100vw;
+        height: 20vh;
+    }
 }
