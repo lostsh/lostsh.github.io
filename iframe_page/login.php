@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SESSION['status'] == 'logged'){
+    header('Location: tchat.php');
+}
+
 include("conn.php");
 if(empty($_POST['room'] || $_POST['passwd'])){
     echo '

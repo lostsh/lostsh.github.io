@@ -8,5 +8,6 @@
     }
 
     $_SESSION['pseudo']=$_POST['pseudo'];
-    include("tchat.php");
+    //include("tchat.php");
+    header('Location: tchat.php');
 ?>
