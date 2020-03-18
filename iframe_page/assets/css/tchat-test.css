@@ -64,6 +64,10 @@ form p input[type="submit"]:hover{
     background-color: blue;
     grid-area: msg;
 }
+.formPost form p:nth-child(3){
+    background-color: green;
+    grid-area: send;
+}
 #logout{
     grid-area: logout;
 }
@@ -71,22 +75,26 @@ form p input[type="submit"]:hover{
 }
 @media screen and (min-width:900px){
     body{
+        
         grid-template-columns: 1fr;
         grid-template-rows: 6fr 1fr;
         grid-template-areas: 
         "tchat"
         "postZone";
     }
-    .formPost form,.formPost{
-        display: flex;
+    /*
+    .formPost{
+        display: grid;
+        grid-area: "postZone logout";
     }
+    */
     /*
     .formPost form{
         display: grid;
         grid-template-areas: 
-        "pseudo msg logout";
-    }*/
-
+        "pseudo msg send";
+    }
+    */
     /*
     .formPost form{
         display: flex;
