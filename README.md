@@ -7,4 +7,4 @@ Salle : [Name of the tchat romm]
 Password : [Password of the tchat room]
 ```
 
->To log in, you have to know someone who is aleredy registred.
+>To log in, you have to find a way to know a chat room, and a password.
