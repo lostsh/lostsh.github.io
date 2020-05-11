@@ -9,14 +9,27 @@ body{
 }
 header{
     grid-area: header;
-    background-color: #251F4B;
-    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color: #01050C;
+    min-height: 12vh;
 }
-article{
+header h2{
+    margin: 0 15vw 5vh 15vw;
+    font-weight: 200;
+}
+section{
     grid-area: article;
     background-color: #01050C;
     min-height: 85vh;
     padding: 0 5vw 0 5vw;
+    margin: 5vh 0 5vh 0;
+}
+section>div{
+    margin: 1vh 0 1vh 0;
 }
 nav{
     grid-area: nav;
@@ -49,12 +62,21 @@ footer p{
 /*======== Classic tag ========*/
 h1{
     color: #ffffff;
-    font: normal 300 18px Lato, sans-serif;
+    font: normal 500 25px Lato, sans-serif;
+}
+h2{
+    color: #ffffff;
+    font: normal 400 20px Lato, sans-serif;
+    text-transform: uppercase;
 }
 h3{
     color: #ffffff;
     font: normal 400 20px Lato, sans-serif;
     text-transform: uppercase;
+}
+h4{
+    color: #ffffff;
+    font: normal 300 20px Lato, sans-serif;
 }
 time{
     color: rgba(255, 255, 255, 0.54);

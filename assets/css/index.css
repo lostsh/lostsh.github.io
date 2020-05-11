@@ -6,10 +6,6 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
-header h2{
-    margin: 0 15vw 5vh 15vw;
-    font-weight: 200;
-}
 header figure img{
     width: 100%;
     height: auto;
