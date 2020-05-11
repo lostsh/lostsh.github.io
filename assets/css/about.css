@@ -2,16 +2,11 @@
 progress{
     border-radius: 10px;
     overflow: hidden;
-    /*
-    *Comme on a la bordure exterieure qui est arondi
-    *le remplissage dépasse donc hop on met 
-    *le depassement en hidden plus propre
-    */
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid rgba(180, 179, 180, 0.452);
 
     height: 5px;
-    width: 90%;
+    width: 95%;
 
     margin: 0 20px 7px 0;
 }
@@ -22,14 +17,14 @@ h3{
 
 .entete_btn_titre{
     display: flex;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.767);
+    border-bottom: 1px solid rgba(180, 179, 180, 0.452);
 }
 
 article ul {
     margin: 0 20 0 20px;
 }
 article ul li span{
-    color: blue;
+    color: rgba(180, 179, 180, 0.452);
 }
 article ul li ul li{
     list-style: none;
@@ -39,11 +34,12 @@ article ul li ul li:nth-last-child(2){
     en comptant du dernier element*/
     color: grey;
 }
-
-.conteneurSousArticle {
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
+@media screen and (min-width:1500px){
+    .conteneurSousArticle {
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+    }
 }
 .sousArticle{
     width: 100%;
@@ -64,7 +60,7 @@ article + article + article {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: cadetblue;
+    background-color: rgba(180, 179, 180, 0.452);
 }
 
 /*tout en bas les Loisirs*/
