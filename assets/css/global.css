@@ -41,7 +41,7 @@ nav{
     min-height: 85vh;/*
     padding: 1vh 1vw 1vh 1vw;*/
 
-    border-left: 0.2px solid rgba(180, 179, 180, 0.452);
+    border-left: 0.5px solid rgba(180, 179, 180, 0.452);
     
     display: flex;
     flex-direction: column;
