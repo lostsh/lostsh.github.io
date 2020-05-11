@@ -19,16 +19,6 @@ article div{
     margin: 5vh 5vw 5vh 5vw;
 }
 
-blockquote{
-    border: 0.5px solid rgba(180, 179, 180, 0.452);
-    border-radius: 2px;
-    padding: 1vh 1vw 1vh 1vw;
-}
-blockquote p:nth-last-child(1){
-    text-align: right;
-}
-
-
 article p{
     margin: 1vh 0 1vh 0;;
 }

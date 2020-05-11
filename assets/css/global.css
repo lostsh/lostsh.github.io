@@ -38,7 +38,7 @@ footer, footer p a{
 footer p{
     margin: 0 1vw 0 1vw;
 }
-
+/*===== Main organisation =====*/
 .main{
     display: grid;
     grid-template-areas: 
@@ -46,7 +46,7 @@ footer p{
     "article article article nav"
     "footer footer footer footer";
 }
-
+/*======== Classic tag ========*/
 h1{
     color: #ffffff;
     font: normal 300 18px Lato, sans-serif;
@@ -60,7 +60,7 @@ time{
     color: rgba(255, 255, 255, 0.54);
     font: normal 700 12px Lato, sans-serif;
 }
-
+/*========== link ===========*/
 a{
     color: #ffffff;
     text-decoration: underline;
@@ -68,4 +68,13 @@ a{
 a:hover{
     color: #ffffff;
     text-decoration: none;
+}
+/*========== quotes =========*/
+blockquote{
+    border: 0.5px solid rgba(180, 179, 180, 0.452);
+    border-radius: 2.5px;
+    padding: 1vh 1vw 1vh 1vw;
+}
+blockquote p:nth-last-child(1){
+    text-align: right;
 }
