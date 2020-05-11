@@ -10,3 +10,11 @@
     font-family: 'classicCerif';
     src: url('../fonts/evil_dead_army_of_d/ARMYD___.TTF');
 }
+@font-face{
+    font-family: 'pixel';
+    src: url('../fonts/NeuePixelSans.ttf');
+}
+@font-face{
+    font-family: 'pixeLisse';
+    src: url('../fonts/PixeLisse.ttf');
+}

@@ -11,10 +11,10 @@ header figure img{
     height: auto;
 }
 
-article div{
-    margin: 5vh 5vw 5vh 5vw;
+section p{
+    margin: 1.5vh 0 1.5vh 0;;
 }
 
-article p{
-    margin: 1vh 0 1vh 0;;
+#pixel{
+    font-family: 'pixel';
 }
