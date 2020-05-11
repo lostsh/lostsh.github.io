@@ -107,8 +107,9 @@ h4{
     font: normal 300 20px Lato, sans-serif;
 }
 time{
-    color: rgba(255, 255, 255, 0.54);
-    font: normal 700 12px Lato, sans-serif;
+    color: rgba(255, 255, 255, 0.54);/*
+    font: lighter 100 10px Lato, sans-serif;*/
+    font: normal 100 15px monospace;
 }
 /*========== link ===========*/
 a{
