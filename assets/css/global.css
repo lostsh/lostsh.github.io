@@ -51,14 +51,17 @@ nav{
 }
 nav a{
     display: block;
+    width: 4vw;
     padding: 0.5vw 3vh 0.5vw 3vh;
     margin: 1vh 0 1vh 0;
     border: 0.5px solid rgba(180, 179, 180, 0.452);
     border-radius: 7px;
 
+    text-align: center;
     text-decoration: none;
     font-family: monospace;
-    font-size: large;
+    /*font-size: large;*/
+    font-size: 1vw;
     color: rgba(180, 179, 180, 0.452);
 }
 nav a:hover{
