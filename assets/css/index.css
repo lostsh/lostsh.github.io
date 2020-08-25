@@ -5,8 +5,6 @@
     padding: 0;
     height: 100%;
     width: 100%;
-
-    z-index: -1;/*To put the img foreground*/
 }
 header{
     height: 100vh;
@@ -15,8 +13,9 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-
-    z-index: -1;/*To put the img foreground*/
+}
+header figure{
+    z-index: 1;
 }
 header figure img{
     width: 100%;
