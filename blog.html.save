@@ -15,7 +15,6 @@
     gtag('config', 'UA-150365762-3');
     </script>
     <!-- Global site tag END -->
-    <script src="../js/blog.js"></script>
   </head>
   <body>
     <h1 hidden>lostsh</h1>
@@ -51,7 +50,6 @@
 
 
 
-        <p id="test">kgrzrtgf</p>
 
         <a href="#">
           <article>
