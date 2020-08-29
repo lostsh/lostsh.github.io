@@ -134,10 +134,13 @@ blockquote p:nth-last-child(1){
 }
 /*====== text decoration ======*/
 /*<span class="blod">*/
-.blod{
+.bold{
     font-weight: bold;
 }
-ul{
+.italic{
+    font-style: italic;
+}
+ul, ol{
     list-style-position: inside;
 }
 table, th, td{
