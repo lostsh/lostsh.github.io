@@ -132,3 +132,20 @@ blockquote{
 blockquote p:nth-last-child(1){
     text-align: right;
 }
+/*====== text decoration ======*/
+/*<span class="blod">*/
+.blod{
+    font-weight: bold;
+}
+ul{
+    list-style-position: inside;
+}
+table, th, td{
+    border: 0.5px solid rgba(180, 179, 180, 0.452);
+    border-radius: 2.5px;
+    padding: 0.5vh 0.5vw 0.5vh 0.5vw;
+}
+table{
+    border-radius: 7px;
+    padding: 1px;
+}
