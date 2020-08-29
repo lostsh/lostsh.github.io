@@ -4,9 +4,11 @@ function main(){
 
   var str = "";
   for(var i in posts){
-    var articleBlogPath = blogPath+posts[i];
-    str+="Post : "+articleBlogPath+"<br>\n";
-    articleGenerator(articleBlogPath, getTitle(articleBlogPath), "28/08/20", "Quick description");
+    if(!posts[i]==""){
+      var articleBlogPath = blogPath+posts[i];
+      str+="Post : "+articleBlogPath+"<br>\n";
+      articleGenerator(articleBlogPath, getTitle(articleBlogPath), "28/08/20", "Quick description");
+    }
   }
   console.log(str);
   //document.write(str);
