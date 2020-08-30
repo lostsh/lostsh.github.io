@@ -11,7 +11,6 @@ function main(nbRequiredPosts){
   var nbPosts = posts.length;
   if(nbPostsToDisplay == 0){
     nbPostsToDisplay = nbPosts;
-    console.log(nbPostsToDisplay+" Iteration prevue");
   }
 
   var str = "";
