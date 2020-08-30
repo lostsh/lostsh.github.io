@@ -1,10 +1,12 @@
-/**
- * This main function use an index file, and then generate a article for eatch blog post in the index file, in reverse order
- **/
 function main(nbRequiredPosts){
   displayPosts(nbRequiredPosts, "../blog/");
 }
 
+/**
+ * This main function use an index file (in the same path as blogPath), 
+ * and then generate a article for eatch blog post in the index file, 
+ * in reverse order (so the last article added in the index file is the most recent)
+ **/
 function displayPosts(nbRequiredPosts, blogPath){
   var nbPostsToDisplay = nbRequiredPosts;
   //var blogPath = "../blog/";
