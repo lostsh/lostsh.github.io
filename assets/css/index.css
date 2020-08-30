@@ -24,7 +24,12 @@ header figure img{
     width: 100%;
     height: auto;
 }
-
+section{
+    /*min-width: 75vw;*/
+    /*min-width: calc(100vw - 20vw - 1vw);*/
+    /*Finally I found the min-height of the section !*/
+    min-width: 79vw;
+}
 section p{
     margin: 1.5vh 0 1.5vh 0;;
 }
