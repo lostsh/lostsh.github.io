@@ -6,6 +6,7 @@
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/index.css"/>
+    <link rel="stylesheet" href="assets/css/blog.css"/>
     <link rel="stylesheet" href="assets/css/importFonts.css"/>
     <!-- Global site tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150365762-3"></script>
@@ -57,6 +58,8 @@
             Etiam ut dui eget purus euismod ultrices.
           </p>
         </div>
+        <div id="articleContainer">
+        </div>
       </section>
       <nav>
         <a href="index.html">Home</a>
@@ -74,10 +77,14 @@
     <script src="assets/js/consol.js"></script>
     <script type="text/javascript">
     function scrollDown(){
-      console.log("\n[*] Scroll Down active\n");
+      //console.log("\n[*] Scroll Down active\n");
       var anchor = document.querySelector("h3");
       anchor.scrollIntoView();
     }
+    </script>
+    <script src="assets/js/blog.js"></script>
+    <script type="text/javascript">
+    displayPosts(4, "assets/blog/");
     </script>
   </body>
 </html>

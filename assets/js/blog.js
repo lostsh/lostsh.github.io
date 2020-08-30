@@ -1,28 +1,28 @@
 /**
  * This main function use an index file, and then generate a article for eatch blog post in the index file, in reverse order
- * 
- * @param nbRequiredPosts number of posts you want to display, 0 for display all posts
  **/
 function main(nbRequiredPosts){
+  displayPosts(nbRequiredPosts, "../blog/");
+}
+
+function displayPosts(nbRequiredPosts, blogPath){
   var nbPostsToDisplay = nbRequiredPosts;
-  var blogPath = "../blog/";
+  //var blogPath = "../blog/";
   var posts = readFile(blogPath+"postsIndex.txt").split('\n');
+  //console.log("Posts index file :" + blogPath+"postsIndex.txt");
 
   var nbPosts = posts.length;
   if(nbPostsToDisplay == 0){
     nbPostsToDisplay = nbPosts;
   }
 
-  var str = "";
   for(var i=0;i<=nbPostsToDisplay;i++){
     var currentPost = nbPosts-i;
     if(!posts[currentPost]==""){
       var articleBlogPath = blogPath+posts[currentPost];
-      str+="Post : "+articleBlogPath+"<br>\n";
-      articleGenerator(articleBlogPath, getTitle(articleBlogPath), getDateFromPath(posts[currentPost]), getSummary(posts[currentPost]));
+      articleGenerator(articleBlogPath, getTitle(articleBlogPath), getDateFromPath(posts[currentPost]), getSummary(articleBlogPath));
     }
   }
-  console.log(str);
 }
 
 /**

@@ -1,13 +1,13 @@
-section{
+#articleContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 6vh 3.5vw;
 }
-section>a{
+#articleContainer>a{
     text-decoration: none;
 }
-section article{
+#articleContainer article{
     padding: 1vh 1vw 1vh 1vh;
     border: 1px solid blue;
     border-radius: 7px;
@@ -15,7 +15,7 @@ section article{
     transition: 650ms;
     opacity: 0.70;
 }
-section article:hover{
+#articleContainer article:hover{
     border-color: red;
     opacity: 1;
 }
