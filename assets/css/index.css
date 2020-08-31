@@ -11,7 +11,6 @@ body{
 }
 header{
     height: 100vh;
-    background-color: #01050C;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -27,13 +26,11 @@ header figure img{
 section{
     /*min-width: 75vw;*/
     /*min-width: calc(100vw - 20vw - 1vw);*/
-    /*Finally I found the min-height of the section !*/
-    min-width: 79vw;
+    /*min-width: 79vw;*/
 }
-section p{
+section>p, section div>p{
     margin: 1.5vh 0 1.5vh 0;;
 }
-
-#pixel{
+.pixel{
     font-family: 'pixel';
 }
