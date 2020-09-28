@@ -145,6 +145,11 @@ table, th, td{
     border-radius: 2.5px;
     padding: 0.5vh 0.5vw 0.5vh 0.5vw;
 }
+hr{
+    height: 1px;
+    background-color: rgba(180, 179, 180, 0.452);
+    border: 0;
+}
 table{
     border-radius: 7px;
     padding: 1px;
