@@ -19,3 +19,15 @@
     border-color: red;
     opacity: 1;
 }
+
+
+@media screen and (max-width: 500px){
+    #articleContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 250px){
+    #articleContainer{
+        grid-template-columns: 1fr;
+    }
+}

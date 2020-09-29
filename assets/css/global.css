@@ -157,13 +157,6 @@ table{
 
 
 
-
-
-
-
-
-
-
 @media screen and (max-width: 500px){
     .main{
         grid-template-areas: 
@@ -193,7 +186,6 @@ table{
         text-align: center;
         text-decoration: none;
         font-family: monospace;
-        /*font-size: large;*/
         font-size: larger;
         color: rgba(180, 179, 180, 0.452);
     }
