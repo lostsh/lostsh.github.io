@@ -13,15 +13,22 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 header figure{
-    z-index: 1;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
 }
+/*
 header figure img{
-    width: 100%;
-    height: auto;
+    max-width: 400px;
+    max-height: 448px;
+}*/
+header figure img{
+    max-height: 75vh;
+    max-width: 100vw;
 }
 section>p, section div>p{
     margin: 1.5vh 0 1.5vh 0;;
