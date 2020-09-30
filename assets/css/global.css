@@ -88,6 +88,9 @@ footer p{
     "footer footer footer footer footer footer";
 }
 /*======== Classic tag ========*/
+section p{
+    margin: 5px 0 5px;
+}
 h1{
     color: #ffffff;
     font: normal 500 25px Lato, sans-serif;
