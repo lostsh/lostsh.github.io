@@ -137,6 +137,12 @@ blockquote p:nth-last-child(1){
 .italic{
     font-style: italic;
 }
+.code{
+    font-family: monospace;
+    background-color: rgba(180, 179, 180, 0.138);
+    border-radius: 7px;
+    padding: 0 2px 0 2px;
+}
 ul, ol{
     list-style-position: inside;
 }
