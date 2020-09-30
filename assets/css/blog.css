@@ -21,12 +21,12 @@
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     #articleContainer{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (max-width: 250px){
+@media screen and (max-width: 400px){
     #articleContainer{
         grid-template-columns: 1fr;
     }
