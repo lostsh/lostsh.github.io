@@ -21,14 +21,9 @@ header figure{
     display: flex;
     justify-content: center;
 }
-/*
-header figure img{
-    max-width: 400px;
-    max-height: 448px;
-}*/
 header figure img{
     max-height: 75vh;
-    max-width: 100vw;
+    max-width: 95vw;
 }
 section>p, section div>p{
     margin: 1.5vh 0 1.5vh 0;;
