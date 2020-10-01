@@ -177,7 +177,8 @@ table{
     nav{
         min-width: 100vw;
         min-height: 2vh;
-    
+
+        border-left: 0;
         border-bottom: 0.5px solid rgba(180, 179, 180, 0.452);
         
         display: flex;
