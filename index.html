@@ -20,7 +20,7 @@
     </script>
     <!-- Global site tag END -->
   </head>
-  <body onload="typer()">
+  <body onload="typer();scrollDown(1)">
     <h1 hidden>lostsh</h1>
     <div class="main">
       <header>
@@ -34,11 +34,12 @@
       <section>
         <h3>There is no light down here</h3>
         <div>
+          <!--
           <blockquote>
             <p>That's all I have to do?</p>
             <p>-Roxas, <cite>Kingdom Hearts</cite></p>
           </blockquote>
-          <br>
+          <br>-->
           <blockquote>
             <p class="pixel">Follow the White Rabbit.</p>
             <p><cite>The Matrix</cite></p>
@@ -71,15 +72,30 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/typing.js"></script>
     <script type="text/javascript">
-    function scrollDown(){
-      //console.log("\n[*] Scroll Down active\n");
+    //speed define the waiting time beetwin two scroll (for the white)
+    function scrollDown(speed=5){
       var anchor = document.querySelector("h3");
-      anchor.scrollIntoView();
+      //anchor.scrollIntoView();
+
+      //get the TOP postion of the <h3>
+      var pos = anchor.offsetTop;
+      console.log("Scroll anchor pos: "+pos+"px\n");
+
+      //while i!=pos keep scrolling
+      var i = 0;
+      var interval = setInterval(function(){
+        window.scroll(0, i);
+        i+=2;
+        if(i>=pos){
+          clearInterval(interval);
+        }
+      }, speed);
+
     }
     </script>
     <script src="assets/js/blog.js"></script>
     <script type="text/javascript">
-    displayPosts(5, "assets/blog/");
+      displayPosts(5, "assets/blog/");
     </script>
   </body>
 </html>
