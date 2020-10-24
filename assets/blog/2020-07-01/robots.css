@@ -4,7 +4,15 @@ img{
 }
 section p {
     margin: 10px 0 10px 0;
+    font-weight: 400;
 }
 ul li{
     margin: 5px 0 5px 0;
+}
+h3{
+    font-size: xx-large;
+}
+h4{
+    font-size: larger;
+    font-weight: bold;
 }
