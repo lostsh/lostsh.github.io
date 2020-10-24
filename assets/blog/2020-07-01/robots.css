@@ -1,3 +1,10 @@
 img{
+    cursor: pointer;
     max-width: 20vw;
+}
+section p {
+    margin: 10px 0 10px 0;
+}
+ul li{
+    margin: 5px 0 5px 0;
 }

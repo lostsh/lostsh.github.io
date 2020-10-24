@@ -27,61 +27,64 @@
         <h3>exploRob</h3>
         <p>Arduino & Raspberry based Robts</p>
         
-        <p>Is an open source boat project. Simple, easy to do.</p>
-        <p>The main objective of this project is to create a boat as simple as possible, with almost what can come to hand.</p>
-        <br>
-        <p>The bluetooth module I used is a <span class="bold">BLE 4.0</span> module (HM-10) it is the only more delicate element to obtain, however we can easily replace it with a more classic bluetooth module (HM-05) or well, according to the desires, and the components that you have by a wifi module, or a RC receiver.</p>
+        <p>Depuis maintenant de nombreuses années, je suis fan d'Arduino et de Raspberry PI. Raison pour laquelle j'ai eu l'occasion de traiter de nombreux projets concernant ces deux fabuleux outils !</p>
         <br>
 
-        <h4>Requirement</h4>
+        <p>
+          J'ai fait connaissance le domaine de la robotique dès mon plus jeune âge, par le biais du modélisme, qui étais et qui reste l'une de mes passions.<br>
+          Ma nature curieuse m'a poussée a en apprendre toujours plus sur "comment cela fonctionne-t-il" et j'ai fini par construire mes propres modèles réduit. Mais ce n'étais pas assez pour moi, je voulais savoir comment tout ce joli monde fonctionnait connaître jusqu'au moindre détail du fonctionnement de composants qui me facilitent depuis si longtemps.<br>
+          C'est alors que j'ai commencé à concevoir mes propres circuits, mes propres modules, et quelques années plus tard j'ai peu à peu appris a les programmer.
+        </p>
+        <p>Et voilà nous y sommes, je me suis à concevoir, construire et programmer mes propres robots, pour faire .. Tout ce qui me plaît, et notamment de l'exploration !</p>
+
         <br>
-        <p>without the motor controller :</p>
+        <br>
+
+        <h4>Mon premier robot</h4>
+        <br>
+        <p>Voici l'un de mes tout premiers robots. Il est doté d'un très grand nombre de modules d'exploration d'une pince principale avec un treuil de levage, et d'une pince secondaire (amovible) qui est extrêmement précise, mais ne peut lever que 9g (elle est conçue à base de servomoteurs 9g).</p>
+        <br>
+        <img src="img/bot.JPG" alt="Mon petit robot sympatoche BY:lostsh" onclick="fullScreen('img/bot.JPG');">
+        <br>
+        <p>Quelques-uns des modules embarqués sur le robot :</p>
         <ul>
-          <li>Arduino</li>
-          <li>DC Motor</li>
-          <li>Servo Motor</li>
-          <li>Mosfets MMOS</li>
+          <li>Deux pinces, la principale a l'arrière est doté d'un motoréducteur de ration 1:144 ce qui lui confère une grande précision, et une importante force d'élévation. La seconde pince a la particularité de pouvoir se mouvoir sur plus d'axes que la première, ce qui lui confère une plus grande dextérité pour les taches minutieuse.</li>
+          <li>Une caméra, pour le piloter a distance.</li>
+          <li>Un potentiomètre pour quelques réglages de dernière minute, ou quelques étalonnages.</li>
+          <li>Un 7 segment display de 4 digits</li>
+          <li>Deux platines de démodulation (CAN CNA) pour contrôler plusieurs autres capteurs, ainsi qu'un ventilateur pour éviter les surchauffes lors des explorations en été en plein soleil, qui ont tendance a provoquer des black-out radio</li>
           <li>Bluetooth Module (HM-10)</li>
+          <li>Un thermomètre</li>
+          <li>Un photodétecteur (et pas une photorésistance XD)</li>
+          <li>Un phare composé de 4 leds RGB</li>
         </ul>
         <br>
-        <p>If you want to add the motor controller, in addition to the previous components you will need:</p>
-        <ul>
-          <li>NPN Transistor</li>
-          <li>Diode (I use a 1N4007)</li>
-          <li>Resistor 1KΩ (or something close to it)</li>
-          <li>In this version, you don't need the MMOS Mosfets</li>
-        </ul>
+        <h4>New Bot !</h4>
+        <p>Mon nouveau robot, plus performant, plus polyvalent, et surtout plus en cours de construction !</p>
         <br>
-
-        <h4>Schema</h4>
         <table>
           <thead>
             <tr>
-              <td>Without the bluetooth module</td>
-              <td>With Blutooth module, and the most simple version, don't have motor controller just turn it ON/OFF</td>
-              <td>With the motor controller and the bluetooth</td>
+              <td>Bot</td>
+              <td>Remote</td>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <img src="img/shema0.png" alt="simple circuit without the bluetooth BY:lostsh"/>
+                <img src="img/exploRob.JPG" alt="exploRob is a sweet robot ! BY:lostsh"/>
               </td>
               <td>
-                <img src="img/shema1.png" alt="V1 of the system BY:lostsh"/>
-              </td>
-              <td>
-                <img src="img/shema2.png" alt="Digital Motor controller BY:lostsh"/>
+                <img src="img/radioCtrl0.JPG" alt="Incredible design for my remote BY:lostsh" title="Design incroyable de l'émetteur"/>
               </td>
             </tr>
             <tr>
-              <td>Simple schema, for a simple circuit without the bluetooth</td>
-              <td>Complete shema of the V1 of the system</td>
-              <td>Adding a Digital Motor controller</td>
+              <td><img src="img/exploRob-zoom.JPG" alt="Inside the remote BY:lostsh"/></td>
+              <td><img src="img/radioCtrl2.JPG" alt="Inside the remote BY:lostsh"/></td>
             </tr>
           </tbody>
         </table>
-        
+
         <br>
         <h4>Plus</h4>
         <p>Pour être notifié de mes avencés vous pouvez me suivre sur Twitter : <a href="https://twitter.com/l0stsh">@l0stsh</a>.</p>
@@ -96,5 +99,10 @@
         <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>
       </footer>
     </div>
+    <script>
+      function fullScreen(imgPath){
+        //do something to display the img on full screen
+      }
+    </script>
   </body>
 </html>
