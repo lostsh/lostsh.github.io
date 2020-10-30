@@ -20,6 +20,7 @@ function fullScreen(imgPath){
 
     var divCroix = document.createElement("div");
     divCroix.style.position = "fixed";
+    divCroix.style.cursor = "pointer";
     divCroix.style.top = "calc(15vh + 5px)";
     divCroix.style.border = "1px solid #ff3333";
     divCroix.onclick = function(){exit();};
