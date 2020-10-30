@@ -16,3 +16,7 @@ h4{
     font-size: larger;
     font-weight: bold;
 }
+
+iframe{
+    max-width: 90vw;
+}
