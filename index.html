@@ -3,27 +3,20 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Portfolio - Blog">
+    <meta name="author" content="Yohann Vernhes">
     <title>lostsh</title>
     <meta name="description" content="Welcome to the personal lostsh site. You will find there his blog, and his CV"/>
+
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/global.css"/>
     <link rel="stylesheet" href="assets/css/index.css"/>
-    <link rel="stylesheet" href="assets/css/blog.css"/>
     <link rel="stylesheet" href="assets/css/importFonts.css"/>
-    <!--======= Halooween theme ======
-    <link rel="stylesheet" href="assets/css/halloween.css" />-->
-    <!-- Global site tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150365762-3"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-150365762-3');
-    </script>
-    <!-- Global site tag END -->
   </head>
-  <body onload="typer();scrollDown(1)">
+  <body onload="typer();">
+    
     <h1 hidden>lostsh</h1>
+
     <div class="main">
       <header>
         <h2>Lostsh</h2>
@@ -33,20 +26,23 @@
         <p id="typer"></p>
         <div id="particles-js"></div>
       </header>
+      <nav id="menu">
+        <a href="index.html#menu">Home</a>
+        <a href="index.html#project">Projets</a>
+        <a href="assets/pages/about.html">About</a>
+        <a href="assets/blog/blog.html">Blog</a>
+      </nav>
+
       <section>
         <h3>There is no light down here</h3>
+
         <div>
-          <!--
-          <blockquote>
-            <p>That's all I have to do?</p>
-            <p>-Roxas, <cite>Kingdom Hearts</cite></p>
-          </blockquote>
-          <br>-->
           <blockquote>
             <p class="pixel">Follow the White Rabbit.</p>
             <p><cite>The Matrix</cite></p>
           </blockquote>
         </div>
+
         <div>
           <p>
             Bonjour, et bienvenue en ces lieux. A présent vous êtes mes hôtes, n’ayez crainte ce site n’enregistre ni cookies ni quelque donnée personnelle que ce soit, votre navigation ne sera donc pas perturbée par d’immondes pop-up.
@@ -56,48 +52,71 @@
             Vous pouvez consulter mon compte <a target="_blank" href="https://twitter.com/l0stsh">Twitter</a>.
           </p>
         </div>
-        <p>Latest articles :</p>
-        <div id="articleContainer">
+
+        <div id="project">
+          <div>
+            <h4>Démineur</h4>
+            <p>Projet de démineur mené en duo dans le cadre de la CPOA (Conception et Programmation Objet Avencé).</p>
+            <img src="assets/img/projects/demineur.png" alt="Screen du démineur BY lostsh"/>
+          </div>
+          <div>
+            <h4>Morpion</h4>
+            <p>Jeu de morpion, disponnible en ligne : <a target="_blank" href="https://more-pion.herokuapp.com">Vous pouvez y jouer ici</a>. Retrouvez aussi le dépot du projet <a target="_blank" href="https://github.com/lostsh/morpion">a cette adresse</a>.</p>
+            <img src="assets/img/projects/morpion.PNG" alt="Image de morpion BY lostsh"/>
+          </div>
+          <div>
+            <h4>Poker</h4>
+            <p>Jeu de Poker programmé dans le cadre de l'IHM (Interface Homme Machine), c'est a dire la concepion d'interfaces utilisateur.Codé en <span class="code">C#</span>.</p>
+            <img src="assets/img/projects/poker.PNG" alt="Jeu du poker BY lostsh"/>
+          </div>
+          <div>
+            <h4>Discothèque</h4>
+            <p>Gestionnaire de musiques, programmé en <span class="code">C#</span> avec les technologies de base de données <span class="code">OLEBD</span> et <span class="code">LINQ</span></p>
+            <img src="assets/img/projects/disco.PNG" alt="Accueil de la Discothèque"/>
+          </div>
+          <div>
+            <h4>Site SQLI</h4>
+            <p>Dans le cadre du PT1 (Projet tutoré 1). Nous avons du réaliser un site pour présenter l'entreprise que nous avons visité.</p>
+            <img src="assets/img/projects/PT1.png" alt="Site du PT1"/>
+          </div>
+          <div>
+            <h4>Pong</h4>
+            <p>Jeu de PONG programmé dans le cadre de la POO (Programmation Orientée Objet). Amélioration personnelle : une version pour jouer en ligne.</p>
+            <img src="assets/img/projects/pong.PNG" alt="Exemple de pong"/>
+          </div>
+          <div>
+            <h4>Titre du projet</h4>
+            <p>Résumé du projet</p>
+            <img src="assets/img/xxxxxxxxxxxxxxxxxxxxx.PNG" alt="Exemple de"/>
+          </div>
+          <div>
+            <h4>Titre du projet</h4>
+            <p>Résumé du projet</p>
+            <img src="assets/img/xxxxxxxxxxxxxxxxxxxxx.PNG" alt="Exemple de"/>
+          </div>
+          <div>
+            <h4>Titre du projet</h4>
+            <p>Résumé du projet</p>
+            <img src="assets/img/xxxxxxxxxxxxxxxxxxxxx.PNG" alt="Exemple de"/>
+          </div>
+          <div>
+            <h4>Titre du projet</h4>
+            <p>Résumé du projet</p>
+            <img src="assets/img/xxxxxxxxxxxxxxxxxxxxx.PNG" alt="Exemple de"/>
+          </div>
         </div>
+
       </section>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="assets/pages/about.html">About</a>
-        <a href="assets/blog/blog.html">Blog</a>
-      </nav>
+
       <footer>
         <p>lostsh © 2020-2021</p>
         <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>
       </footer>
+
     </div>
+
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/typing.js"></script>
-    <script>
-    //speed define the waiting time beetwin two scroll (for the white)
-    function scrollDown(speed=5){
-      var anchor = document.querySelector("h3");
-      //anchor.scrollIntoView();
-
-      //get the TOP postion of the <h3>
-      var pos = anchor.offsetTop;
-      console.log("Scroll anchor pos: "+pos+"px\n");
-
-      //while i!=pos keep scrolling
-      var i = 0;
-      var interval = setInterval(function(){
-        window.scroll(0, i);
-        i+=2;
-        if(i>=pos){
-          clearInterval(interval);
-        }
-      }, speed);
-
-    }
-    </script>
-    <script src="assets/js/blog.js"></script>
-    <script>
-      displayPosts(5, "assets/blog/");
-    </script>
   </body>
 </html>
