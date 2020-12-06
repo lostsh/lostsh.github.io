@@ -1,4 +1,4 @@
-body{
+*{
     scroll-behavior: smooth;
 }
 #particles-js {
@@ -9,6 +9,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
 header{
     height: 100vh;
     display: flex;
@@ -25,14 +26,23 @@ header figure img{
     max-height: 75vh;
     max-width: 95vw;
 }
+
 section>p, section div>p{
     margin: 1.5vh 0 1.5vh 0;;
+}
+section h3,section h4{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .pixel{
     font-family: 'pixel';
 }
 
-/*===== Project DIV =====*/
+/*
+ *  +=========================+
+ *  |       Project DIV       |
+ *  °=========================°
+ */
 
 #project{
     display: grid;
@@ -54,14 +64,14 @@ section>p, section div>p{
     height: 100%;
     width: 100%;
     background-color: rgba(33, 37, 41, 0.2);
-    transition: all 0.9s ease-out;
+    transition: all 0.6s ease-out;
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: -1;
 }
 #project div h4,#project div p{
-    transition: opacity 0.9s;
+    transition: opacity 0.6s;
     z-index: 2;
     color: #fff;
     opacity: 0.7;
@@ -95,3 +105,37 @@ section>p, section div>p{
     display: block;
     font-weight: bolder;
 }
+
+@media screen and (min-width: 1500px){
+    #project{
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #project div{
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 1000px){
+    #project{
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #project div{
+        height: 27vh;
+    }
+}
+@media screen and (max-width: 500px){
+    #project{
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+ *  +=========================+
+ *  |   END Project DIV END   |
+ *  °=========================°
+ */
