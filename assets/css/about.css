@@ -24,8 +24,15 @@ article ul {
     margin: 0 20px 0 20px;
     list-style-type: circle;
 }
+article:nth-child(3) ul,
+article:nth-child(4) ul,
+article:nth-child(5) ul{
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
 article ul li span{
     color: rgba(180, 179, 180, 0.452);
+    font-weight: 400;
 }
 article ul li ul li{
     list-style: none;

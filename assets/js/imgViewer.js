@@ -42,6 +42,7 @@ function fullScreen(imgPath){
     divBackground.style.top = "0";
     divBackground.style.backgroundColor = "black";
     divBackground.style.opacity = "0.8";
+    divBackground.onclick = function(){exit();};
 
     var divLeftArrow = document.createElement("div");
     divLeftArrow.style.width = "0.9em";
