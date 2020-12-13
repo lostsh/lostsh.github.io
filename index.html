@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/index.css"/>
     <link rel="stylesheet" href="assets/css/importFonts.css"/>
   </head>
-  <body onload="typer();scrollDown(4)">
+  <body onload="typer();scrollAction(2);">
     
     <h1 hidden>lostsh</h1>
 
@@ -150,6 +150,19 @@
     <script src="assets/js/typing.js"></script>
     <script src="assets/js/imgViewer.js"></script>
     <script>
+      
+      function scrollAction(scrollSpeed){
+        // if the page is index.html without any anchor, then we call the scroll animation
+        var pageRequestedIsHome = window.location.href.indexOf("#") < 0;
+
+        if(pageRequestedIsHome){
+          scrollDown(scrollSpeed);
+        }
+        
+        console.log("\n[*] Page requested " + (pageRequestedIsHome?"is index.html\n":"contains some anchor ('#menu' or '#prjects')\n"));
+      }
+
+
       //speed define the waiting time beetwin two scroll (for the white)
       function scrollDown(speed=5){
         var anchor = document.querySelector("nav");
