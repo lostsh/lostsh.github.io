@@ -22,7 +22,7 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -30,8 +30,8 @@ particlesJS('particles-js',
         "polygon": {
           "nb_sides": 5
         },
+        "src": "../img/alveole.png",
         "image": {
-          "src": "img/github.svg",
           "width": 100,
           "height": 100
         }
