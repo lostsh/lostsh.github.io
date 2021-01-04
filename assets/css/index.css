@@ -103,6 +103,7 @@ section{
 }
 .vertical-line{
     margin-left: 5vw;
+    margin-right: 1vw;
 }
 section p{
     margin: 1vh 0 1vh 0;
@@ -110,9 +111,12 @@ section p{
 
 
 /*
-.main:nth-child(3){
-    display: initial;
-}*/
+ *  +=========================+
+ *  |       Projects DIV      |
+ *  °=========================°
+ */
+
+
 
 #projects{
     background-color: white;
@@ -126,109 +130,60 @@ section p{
     min-height: 100vh;
 }
 
-/*
- *  +=========================+
- *  |       Projects DIV      |
- *  °=========================°
- */
 
-#projects{/*
-    display: flex;
-    flex-direction: column;*/
+#projects{
+    padding: 1vh 0 1vh 0;
 }
-/*
 .project{
     margin-left: 5vw;
-    /*
     border: 1px solid rgb(107, 91, 91);
+    border-top: 0;
     border-radius: 7px;
     box-shadow: 0 0 5px 0 #2188ff;
-    */
-    /*
-    max-height: 500px;
-    max-width: 400px;*/
-    /*
-    height: min-content;
-    width: min-content;
-    overflow: hidden;
-}*/
-.project img{
-    border: 1px solid rgb(107, 91, 91);
-    border-radius: 7px;
-    box-shadow: 0 0 9px 0 #2188ff;
 
-    display: flex;
+    display: block;
 
-    /*
-    position: relative;
-    z-index: 3;*/
+    background-color: #d4e2f8;
 
-    /*
-    max-height: 100%;
-    max-width: 100%;*/
     max-height: 500px;
     max-width: 400px;
     overflow: hidden;
 }
+.project img{
+    display: flex;
+
+    border-radius: 7px 7px 0 0;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 .project h4,.project p{
-    position: relative;
-    z-index: 6;
+    /*position: relative;
+    z-index: 6;*/
+
+    margin: 0.5vh 0.5vw 0.5vh 0.5vw;
 
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: rgb(107, 91, 91);
 }
 .project h4{
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.25;
+    display: inline-block;
+    border-bottom: 3px solid rgb(107, 91, 91);
 }
-.project p{
-    
-}
-
-
-/*
-#projects{
-    display: grid;
-    grid-gap: 7px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+.project p{}
 .project{
-    border: 1px solid rgb(107, 91, 91);
-    border-radius: 7px;
-
-    display: block;
-    position: relative;
-    max-height: auto;
-    overflow: hidden;
+    margin-top: 5vh;
 }
-.project img{
-    display: flex;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(33, 37, 41, 0.2);
-    transition: all 0.6s ease-out;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
+.project:nth-child(2n){
+    margin-top: 10vh;
+    margin-left: 20vw;
 }
-.project h4,.project p{
-    transition: opacity 0.6s;
-    z-index: 2;
-    color: #fff;
-    opacity: 0.7;
-    margin: 1vh 1vw 1vh 1vw;
-    padding: 1vh 1vw 1vh 1vw;
+.project:nth-child(3n){
+    margin-top: 15vh;
+    margin-left: 40vw;
 }
-.project h4 {
-    text-transform: uppercase;
-    border-radius: 7px;
-    background-color: black;
-
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20%;
-}*/
