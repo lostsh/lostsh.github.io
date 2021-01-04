@@ -112,3 +112,52 @@ section p{
     margin-top: 15vh;
     margin-left: 40vw;
 }
+
+
+
+
+
+
+
+#nothing{
+    background-image:
+            url("../img/alveole_screen-little.svg"),
+            url("../img/nothingtosee_dark.jpg");
+    background-size: cover;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat-y;
+
+    box-shadow:inset 0 0 20px 0 #041027;
+}
+#code-presentation{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+#code-presentation pre{
+    font-size: medium;
+    font-family: 'Inconsolata', monospace;
+    color: rgb(146, 146, 146);
+}
+.syntax{
+    color: #2188ff;
+}
+.type-func{
+    color: #0057ba;
+}
+.var{
+    color: #2bff55;
+}
+.this{
+    color: red;
+}
+.str{
+    color: #6dff8a;
+}
+.comment{
+    color: rgba(255, 255, 255, 0.385);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
