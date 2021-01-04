@@ -30,8 +30,8 @@ particlesJS('particles-js',
         "polygon": {
           "nb_sides": 5
         },
-        "src": "../img/alveole.png",
         "image": {
+          "src": "assets/img/alveole.png",
           "width": 100,
           "height": 100
         }
@@ -47,7 +47,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 10,
         "random": true,
         "anim": {
           "enable": false,
