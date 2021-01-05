@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta name="description" content="Portfolio - Blog">
+  <meta name="author" content="Yohann Vernhes">
   <title>lostsh</title>
+  <meta name="description" content="Welcome to the personal lostsh site. You will find there his blog, and his CV"/>
 
-  <link rel="stylesheet" href="assets/css/global.css"/>
+  <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/index.css"/>
 </head>
 
@@ -14,6 +17,7 @@
   <header>
     <div id="particles-js"></div>
   </header>
+  <h1 hidden>lostsh</h1>
   <div class="main">
     <nav id="menu">
       <a href="index.html#menu">Home</a>
@@ -45,7 +49,7 @@
         <div class="project">
           <h4>Démineur</h4>
           <p>Projet de démineur mené en duo dans le cadre de la CPOA (Conception et Programmation Objet Avencé).</p>
-          <img src="assets/img/projects/demineur.png" alt="Screen du démineur BY lostsh"/>
+          <img src="assets/img/projects/demineur.jpg" alt="Screen du démineur BY lostsh"/>
         </div>
         <div class="project">
           <h4>Morpion</h4>
@@ -116,7 +120,7 @@
 <pre>
   <span class="syntax">Class</span> Yohann_Vernhes{
 
-    <span class="comment">// Incredibely creative, self maden programmer</span>
+    <span class="comment">// Creative, self maden programmer</span>
     <span class="syntax">private void construct</span>(){
       <span class="this">this</span>.<span class="var">type</span> = new <span class="type-func">Programmer()</span>;
       <span class="this">this</span>.<span class="var">name</span> = <span class="str">'Yohann Vernhes'</span>;
@@ -130,7 +134,7 @@
       <span class="syntax">return</span> <span class="var">jobDone</span>;
     }
 
-    // q u i c k   s u m u p  :
+    <span class="comment">// q u i c k   s u m u p  :</span>
     <span class="syntax">public</span> <span class="type-func">String</span> masteries(){
       <span class="syntax">return</span> <span class="str">[
         'object' => {'<span class="type-func">JSE</span>', '<span class="type-func">JEE</span>', '<span class="type-func">C#</span>', '<span class="type-func">Cpp</span>', '<span class="type-func">Python2/3</span>'},
@@ -168,7 +172,10 @@
     </section>
 
   </div><!--END main-->
-  <footer></footer>
+  <footer><!--
+    <p>lostsh © 2020-2021</p>
+    <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>-->
+  </footer>
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
