@@ -1,5 +1,3 @@
-
-
 /*
 main article h1{
     font-size: 2em;
@@ -19,6 +17,9 @@ main article h1:hover{
     left: 2.5vh;
     height: 100vh;
     width: 95vw;
+}
+main>article{
+    min-height: 100vh;
 }
 main article{
     font-size: x-large;
