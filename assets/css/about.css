@@ -1,0 +1,88 @@
+main article{
+    min-width: 90vw;
+}
+footer{
+    width: 100%;
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║             CV             ║
+    ╚════════════════════════════╝
+*/
+progress{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid rgba(180, 179, 180, 0.452);
+
+    height: 5px;
+    width: 95%;
+
+    margin: 0 20px 7px 0;
+}
+
+h3{
+    margin-left: 10px;
+}
+
+.entete_btn_titre{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(180, 179, 180, 0.452);
+}
+
+article ul {
+    margin: 0 20px 0 20px;
+    list-style-type: circle;
+}
+article:nth-child(3) ul,
+article:nth-child(4) ul,
+article:nth-child(5) ul{
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+}
+article ul li span{
+    color: rgba(180, 179, 180, 0.452);
+    font-weight: 400;
+}
+article ul li ul li{
+    list-style: none;
+}
+article ul li ul li:nth-last-child(2){
+    /*selectionne le deuxieme element 
+    en comptant du dernier element*/
+    color: grey;
+}
+@media screen and (min-width:1500px){
+    .conteneurSousArticle {
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+    }
+}
+.sousArticle{
+    width: 100%;
+    /*margin: 10px;*/
+    padding: 10px;
+}
+article{
+    margin: 10px;
+}
+article + article {
+    padding: 10px;
+}
+article + article + article {
+    padding: 10px;
+}
+.pastille{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgba(180, 179, 180, 0.452);
+}
+
+/*tout en bas les Loisirs*/
+article div p span{
+    font-weight: 400;
+}
