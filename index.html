@@ -1,188 +1,105 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta name="description" content="Portfolio - Blog">
-    <meta name="author" content="Yohann Vernhes">
-    <title>lostsh</title>
-    <meta name="description" content="Welcome to the personal lostsh site. You will find there his blog, and his CV"/>
+<html lang="FR">
 
-    <link rel="icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="assets/css/global.css"/>
-    <link rel="stylesheet" href="assets/css/index.css"/>
-    <link rel="stylesheet" href="assets/css/importFonts.css"/>
-  </head>
-  <body onload="typer();scrollAction(2);">
-    
-    <h1 hidden>lostsh</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta name="description" content="Portfolio - Blog">
+  <meta name="author" content="Yohann Vernhes (lostsh ᓚᘏᗢ)">
+  <title>lostsh</title>
+  <meta name="description" content="Welcome to the lostsh site. Bblog, CV and strage projects ! (BY ᓚᘏᗢ)"/>
 
-    <div class="main">
-      <header>
-        <h2>Lostsh</h2>
-        <figure>
-          <img src="assets/img/ghostFish.png" alt="light and darkness is everywhere">
-        </figure>
-        <p id="typer"></p>
-        <div id="particles-js"></div>
-      </header>
-      <nav id="menu">
-        <a href="index.html#menu">Home</a>
-        <a href="index.html#project">Project</a>
-        <a href="assets/pages/about.html">About</a>
-        <a href="assets/blog/blog.html">Blog</a>
-      </nav>
+  <link rel="icon" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/index.css"/>
+</head>
 
-      <section>
-        <h3>There is no light down here</h3>
+<body>
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+    <main>
+        <article>
+            <h1 hidden> lostsh </h1>
+            <div id="code-presentation">
+<pre>
+  <span class="syntax">Class</span> Yohann_Vernhes{
 
-        <div>
-          <blockquote>
-            <p class="pixel">Follow the White Rabbit.</p>
-            <p><cite>The Matrix</cite></p>
-          </blockquote>
-        </div>
+    <span class="comment">// Creative, self maden programmer</span>
+    <span class="syntax">private void construct</span>(){
+      <span class="this">this</span>.<span class="var">type</span> = new <span class="type-func">Programmer()</span>;
+      <span class="this">this</span>.<span class="var">name</span> = <span class="str">'Yohann Vernhes'</span>;
+      <span class="this">this</span>.<span class="var">contact</span> = <span class="str">'</span><a href="mailto:yohann.vernhes@gmail.com" class="str">yohann.vernhes@gmail.com</a><span class="str">'</span>;
+    }
 
-        <div>
-          <p>Étudiant à L’IUT Informatique de Bordeaux</p>
-          <p>Passionné de Sécurité Informatique, et de programmation. Durant mon temps libre j'aime programmer, apprendre de
-            nouvelles choses ou avancer sur mes projets personnels. J’aime la lecture les voyages les rencontres et le
-            challenge.</p>
-          <p>A l'avenir, je souhaite intégrer une école d'ingénieur ou une école informatique. Puis me spécialiser dans la
-            sécurité informatique.</p>
-          <p>
-            Sur la page <a href="assets/pages/about.html">about</a> vous trouverez diverses informations fort peu intéressantes
-            à mon propos, ainsi que mon CV.
-            Sur la page <a href="assets/blog/blog.html">blog</a> vous trouverez des articles de blog, que vous pourrez retrouver
-            sur mon compte <a target="_blank" href="https://github.com/lostsh">GitHub</a>.
-            Vous pouvez consulter mon compte <a target="_blank" href="https://twitter.com/l0stsh">Twitter</a>.
-          </p>
-        </div>
+    <span class="comment">// q u i c k   s u m u p  :</span>
+    <span class="syntax">public</span> <span class="type-func">String</span> masteries(){
+      <span class="syntax">return</span> <span class="str">[
+        'object' => {'<span class="type-func">JSE</span>', '<span class="type-func">JEE</span>', '<span class="type-func">C#</span>', '<span class="type-func">Cpp</span>', '<span class="type-func">Python2/3</span>'},
+        'embedded' => {'<span class="type-func">C11/17/99</span>', '<span class="type-func">Assembly</span>'},
+        'script' => {'<span class="type-func">Bash</span>', '<span class="type-func">Python2/3</span>', '<span class="type-func">PHP</span>'},
+        'web' => {'<span class="type-func">HTML</span>', '<span class="type-func">CSS</span>', '<span class="type-func">JS</span>', '<span class="type-func">BootStrap</span>', '<span class="type-func">Symfony</span>'}
+      ]</span>;
+    }
 
-        <div>
-          <h3>Projets scolaires</h3>
-        </div>
-
-        <div id="project">
-          <div>
-            <h4>Nuit de l'info 2020</h4>
-            <p>Concours de la nuit de l'info 2020. La super équipe <span class="bold">BA$HROOM</span> a conçu <a target="_blank" href="https://bashroom.herokuapp.com">ce site web</a>. Vous pouvez consulter le <a target="_blank" href="https://github.com/BA-HROOM/bashroom">dépot du projet</a>.</p>
-            <img src="assets/img/projects/logo_bashroom.png" alt="Logo BY Aelhya"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/demineur.jpg');">
-            <h4>Démineur</h4>
-            <p>Projet de démineur mené en duo dans le cadre de la CPOA (Conception et Programmation Objet Avencé). Programmé en <span class="code">Java SE</span>.</p>
-            <img src="assets/img/projects/demineur.jpg" alt="Screen du démineur BY lostsh"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/box.jpg');">
-            <h4>Morpion</h4>
-            <p>Jeu de morpion, disponnible en ligne : <a target="_blank" href="https://more-pion.herokuapp.com">Vous pouvez y jouer ici</a>. Retrouvez aussi le dépot du projet <a target="_blank" href="https://github.com/lostsh/morpion">a cette adresse</a>. Programmé en <span class="code">PHP</span> vanilla.</p>
-            <img src="assets/img/projects/morpion.png" alt="Image de morpion BY lostsh"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/poker.PNG');">
-            <h4>Poker</h4>
-            <p>Jeu de Poker programmé dans le cadre de l'IHM (Interface Homme Machine), c'est a dire la concepion d'interfaces utilisateur. Codé en <span class="code">C#</span>.</p>
-            <img src="assets/img/projects/poker.PNG" alt="Jeu du poker BY lostsh"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/disco.PNG');">
-            <h4>Discothèque</h4>
-            <p>Gestionnaire de musiques, programmé en <span class="code">C#</span> avec les technologies de base de données <span class="code">OLEBD</span> et <span class="code">LINQ</span></p>
-            <img src="assets/img/projects/disco.PNG" alt="Accueil de la Discothèque"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/sqli.png');">
-            <h4>Site SQLI</h4>
-            <p>Dans le cadre du PT1 (Projet tutoré). Nous avons du réaliser un site pour présenter l'entreprise que nous avons visité.</p>
-            <img src="assets/img/projects/sqli.png" alt="Site du PT1"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/gameretro.png');">
-            <h4>Site exemple flex</h4>
-            <p>Site pour les cours de WEB premier entrainement au flex. Le site est <a target="_blank" href="https://lostsh.github.io/gameretro/">disponnible ici</a>, et le dépot du projet est <a target="_blank" href="https://github.com/lostsh/gameretro">disponnible ici</a>. Ajout d'un tchat sans rapport avec l'exercice.</p>
-            <img src="assets/img/projects/gameretro.png" alt="Exemple Gameretro"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/pong.PNG');">
-            <h4>Pong</h4>
-            <p>Jeu de PONG programmé dans le cadre de la POO (Programmation Orientée Objet). Amélioration personnelle : une version pour jouer en ligne.</p>
-            <img src="assets/img/projects/pong.PNG" alt="Exemple de pong"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/snt.PNG');">
-            <h4>Site de SNT</h4>
-            <p>Site pour le lycée, et plus précisément la matière SNT des nouveaux programmes scolaires.</p>
-            <img src="assets/img/projects/snt.PNG" alt="Accueil du site SNT"/>
-          </div>
-          <div onclick="fullScreen('assets/img/projects/sunny.gif');">
-            <h4>Sunny</h4>
-            <p>Projet de trackeur solaire présenté lors de TPE. Programmé en <span class="code">HTML/CSS</span>, <span class="code">JS</span>, et <span class="code">arduino</span>, ainsi qu'un peut de <span class="code">python</span>. Vous pouvez visiter <a target="_blank" href="https://lostsh.github.io/sunny/">le site du projet</a>.</p>
-            <img src="assets/img/projects/sunny.png" alt="Sunny exemple"/>
-          </div>
-          <div>
-            <h4>Hackathon</h4>
-            <p>Première place dans un hackathon sur les fakes news. Avec <a target="_blank" href="https://youtu.be/Qw5OKKaLRfw">cette vidéo</a> de sensibilisation.</p>
-            <img src="assets/img/projects/hackathon.png" alt="Site de Self-e V1 BY lostsh"/>
-          </div>
-          <div>
-            <h4>Self-e</h4>
-            <p>Système de réservation de repas, ayant pour objectif la réduction du gaspillage alimentaire dans les cantines scolaires. Présentatation du projet <a target="_blank" href="https://youtu.be/ciSc-jTICgs">ici</a>. <a target="_blank" href="https://www.sudouest.fr/2018/03/23/ces-eleves-luttent-contre-le-gaspillage-a-la-cantine-4306383-3452.php">On parle de nous !</a></p>
-            <img src="assets/img/projects/selfe.JPG" alt="Site de Self-e V1 BY lostsh"/>
-          </div>
-          <div>
-            <h4>Enigma</h4>
-            <p>Site de présentation de la machine énigma de cryptographie.</p>
-            <img src="assets/img/projects/enigma.PNG" alt="Enigma site"/>
-          </div>
-          <div>
-            <h4>Optique</h4>
-            <p>Simulation de lentille conevrgente.</p>
-            <img src="assets/img/projects/optique.PNG" alt="Progamme d'optique"/>
-          </div>
-        </div>
-
-      </section>
-
-      <footer>
-        <p>lostsh © 2020-2021</p>
-        <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>
-      </footer>
-
-    </div>
-
-    <script src="assets/js/particles.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/typing.js"></script>
-    <script src="assets/js/imgViewer.js"></script>
-    <script>
-      
-      function scrollAction(scrollSpeed){
-        // if the page is index.html without any anchor, then we call the scroll animation
-        var pageRequestedIsHome = window.location.href.indexOf("#") < 0;
-
-        if(pageRequestedIsHome){
-          scrollDown(scrollSpeed);
+    <span class="syntax">public</span> <span class="type-func">Work</span> work(){
+        <span class="syntax">While</span>(<span class="this">this</span>.<span class="type-func">haveCoffe()</span>){
+          <span class="var">job</span>.<span class="type-func">acheive()</span>;
         }
-        
-        console.log("[*] Page requested " + (pageRequestedIsHome?"is index.html\n":"contains some anchor ('#menu' or '#prjects')\n"));
-      }
+        <span class="syntax">return</span> <span class="var">jobDone</span>;
+    }
 
+    <span class="syntax">public</span> <span class="type-func">String</span> pastime(){
+      <span class="syntax">return</span>
+      <span class="str">"
+        coding random stuff like
 
-      //speed define the waiting time beetwin two scroll (for the white)
-      function scrollDown(speed=5){
-        var anchor = document.querySelector("nav");
-        //anchor.scrollIntoView();
-  
-        //get the TOP postion of the <h3>
-        var pos = anchor.offsetTop;
-        console.log("[+] Scroll to 'nav' anchor: "+pos+"px\n");
-  
-        //while i!=pos keep scrolling
-        var i = 0;
-        var interval = setInterval(function(){
-          window.scroll(0, i);
-          i+=2;
-          if(i>=pos){
-            clearInterval(interval);
-          }
-        }, speed);
-  
-      }
-      </script>
-  </body>
+        ┌─────────────────────────────┐
+        │  ╔═════════╗     ┏┅┅┅┅┅┅┓   │▒
+        │  ║ MORPION ║     ┇ GAME ┇   │▒
+        │  ╚════╦════╝     ┗┅┅┅┅┅┅┛   │▒
+        ╞═╤═════╩═════╤═══════════════╡▒
+        │ ├───┬───┬───┤               │▒
+        │ │ X │   │ O │   ╭╴ 	  ╶╮  │▒
+        │ ├───┼───┼───┤   │   BY   │  │▒
+        │ │   │ X │ O │   │        │  │▒
+        │ ├───┼───┼───┤   │ LOSTSH │  │▒
+        │ │   │   │ X │   ╰╴      ╶╯  │▒
+        │ └───┴───┴───┘               │▒
+        └─────────────────────────────┘▒
+         ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+      "</span>;
+    }
+  }
+</pre>
+            
+        </article>
+        <article>
+          <h1>🧮 Moi 🚀</h1>
+          <div>
+            <p>Étudiant à CYTECH, ancien de L’IUT Informatique de Bordeaux</p>
+            <p>Passionné de Sécurité Informatique, et de programmation. Durant mon temps libre j'aime programmer, apprendre de
+              nouvelles choses ou avancer sur mes projets personnels. J’aime la lecture les voyages les rencontres et le
+              challenge.</p>
+            <p>A l'avenir, je souhaite me spécialiser dans la <span class="grey">sécurité informatique</span>.</p>
+            <p>
+              Sur la page <a href="assets/pages/about.html">about</a> vous trouverez diverses informations fort peu intéressantes
+              à mon propos, ainsi que mon CV.
+              Sur la page <a href="assets/blog/blog.html">blog</a> vous trouverez des articles de blog, que vous pourrez retrouver
+              sur mon compte <a target="_blank" href="https://github.com/lostsh">GitHub</a>.
+              Vous pouvez consulter mon compte <a target="_blank" href="https://twitter.com/l0stsh">Twitter</a>.
+            </p>
+          </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Lostsh © 2021-2022</p>
+        <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>
+    </footer>
+</body>
+
 </html>

@@ -1,0 +1,180 @@
+
+/*
+
+╔═════════════════════════════╗ 
+║   ©  BY: lostsh ᓚᘏᗢ        ║▒
+╟─────────────────────────────╢▒
+║ all or part of the system   ║▒
+║ is confidential and falls   ║▒
+║ under French personal data  ║▒
+║ protection law              ║▒
+╚═════════════════════════════╝▒
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+*/
+
+
+
+/* 
+    ╔════════════════════════════╗ 
+    ║           Main             ║
+    ╚════════════════════════════╝
+*/
+body{
+    background-color: #130C40;
+    color: #C9C7D2;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: 'Roboto Mono', monospace;
+}
+main article{
+    width: 70vw;
+    max-width: 70vw;
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║          Nav Menu          ║
+    ╚════════════════════════════╝
+*/
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: large;
+    color: #F2055C;
+}
+#menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 0.7vh 2vw 0.7vh 2vw;
+    margin: 1vh 1vw 1vh 1vw;
+    position: relative;
+}
+nav a:after{    
+    background: #F2055C;
+    
+    display: block;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    
+    position: absolute;
+    left: 50%;
+    
+    content: "";
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+nav a:hover:after{ 
+    width: 100%; 
+    left: 0; 
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║           Footer           ║
+    ╚════════════════════════════╝
+*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Mono', monospace;
+    font-size: smaller;
+
+    border-top: 1px solid #2a2e5e;
+}
+
+
+/* 
+    ╔════════════════════════════╗ 
+    ║        Classic tags        ║
+    ╚════════════════════════════╝
+*/
+
+h1, h2, h3{
+    color: #C9C7D2;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+p{
+    margin: 1em 0 1em 0;
+    line-height: 1.5;
+}
+/*select avery selected text*/
+::selection{
+    background-color: #76708C;
+}
+a{
+    color: inherit;
+    text-decoration-color: #A6034F;
+}
+a:hover{
+    transition-duration: 0.5s;
+    text-decoration-color: #F2055C;
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║        Layouts class       ║
+    ╚════════════════════════════╝
+*/
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.code{
+    font-family: 'Pixel', monospace;
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+}
+.text-left{
+    float: left;
+}
+.text-right{
+    float: right;
+}
+.grey{
+    color: #76708C;
+}
+
+
+
+/* 
+    ╔════════════════════════════╗ 
+    ║           Fonts            ║
+    ╚════════════════════════════╝
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixellari.ttf');
+}
+
+
+
+
+/* 
+    ╔════════════════════════════╗ 
+    ║         NEW Theme          ║
+    ╚════════════════════════════╝
+
+    nuance clair : #F2055C
+    nuance foncée : #A6034F
+    gris : #76708C
+    blanc : #C9C7D2
+    backgrond : #130C40
+*/
