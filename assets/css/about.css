@@ -86,3 +86,41 @@ article + article + article {
 article div p span{
     font-weight: 400;
 }
+
+/**
+ * [-==========================================-]
+ * | Animation pour le bouton de téléchargement |
+ * °============================================°
+ */
+
+ .downloadBtn {
+    display: flex;
+}
+.btnDownload {
+    padding: 0.5vw 3vh 0.5vw 3vh;
+    margin: 1vh 0 1vh 0;
+    border: 0.5px solid rgba(180, 179, 180, 0.452);
+    border-radius: 7px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: large;
+    color: rgba(180, 179, 180, 0.452);
+
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.downloadBtn a:hover{
+    color: #ffffff;
+    border-color: #ffffff;
+
+    animation: borderAnim 4s;
+}
+
+@keyframes borderAnim{
+    0%   {border-top-color: #01050C;}
+    25%  {border-right-color: #01050C;}
+    50%  {border-bottom-color: #01050C;}
+    100% {border-left-color: #01050C;}
+}
