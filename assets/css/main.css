@@ -48,7 +48,7 @@ main article{
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     font-size: large;
-    color: #F2055C;
+    color: #FB8C00;
 }
 #menu a{
     text-transform: uppercase;
@@ -59,7 +59,7 @@ main article{
     position: relative;
 }
 nav a:after{    
-    background: #F2055C;
+    background: #FF9800;
     
     display: block;
     bottom: 0;
@@ -115,11 +115,11 @@ p{
 }
 a{
     color: inherit;
-    text-decoration-color: #A6034F;
+    text-decoration-color: #FB8C00;
 }
 a:hover{
     transition-duration: 0.5s;
-    text-decoration-color: #F2055C;
+    text-decoration-color: #FF9800;
 }
 
 /* 
@@ -172,8 +172,8 @@ a:hover{
     ║         NEW Theme          ║
     ╚════════════════════════════╝
 
-    nuance clair : #F2055C
-    nuance foncée : #A6034F
+    nuance clair : #FF9800
+    nuance foncée : #FB8C00
     gris : #76708C
     blanc : #C9C7D2
     backgrond : #130C40
