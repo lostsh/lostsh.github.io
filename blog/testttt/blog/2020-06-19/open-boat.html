@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>lostsh - Blog : Open Boat</title>
+    <link rel="icon" href="../../img/favicon.ico">
+    <link rel="stylesheet" href="../../css/global.css"/>
+    <link rel="stylesheet" href="imgStyle.css"/>
+    <!-- Global site tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150365762-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-150365762-3');
+    </script>
+    <!-- Global site tag END -->
+  </head>
+  <body>
+    <h1 hidden>lostsh</h1>
+    <div class="main">
+      <header>
+        <h2>Lostsh</h2>
+        </header>
+      <section>
+        <h3>Open Boat</h3>
+        <p>RC boat based on Arduino</p>
+        <p>Is an open source boat project. Simple, easy to do.</p>
+        <p>The main objective of this project is to create a boat as simple as possible, with almost what can come to hand.</p>
+        <br>
+        <p>The bluetooth module I used is a <span class="bold">BLE 4.0</span> module (HM-10) it is the only more delicate element to obtain, however we can easily replace it with a more classic bluetooth module (HM-05) or well, according to the desires, and the components that you have by a wifi module, or a RC receiver.</p>
+        <br>
+
+        <h4>Requirement</h4>
+        <br>
+        <p>without the motor controller :</p>
+        <ul>
+          <li>Arduino</li>
+          <li>DC Motor</li>
+          <li>Servo Motor</li>
+          <li>Mosfets MMOS</li>
+          <li>Bluetooth Module (HM-10)</li>
+        </ul>
+        <br>
+        <p>If you want to add the motor controller, in addition to the previous components you will need:</p>
+        <ul>
+          <li>NPN Transistor</li>
+          <li>Diode (I use a 1N4007)</li>
+          <li>Resistor 1KΩ (or something close to it)</li>
+          <li>In this version, you don't need the MMOS Mosfets</li>
+        </ul>
+        <br>
+
+        <h4>Schema</h4>
+        <table>
+          <thead>
+            <tr>
+              <td>Without the bluetooth module</td>
+              <td>With Blutooth module, and the most simple version, don't have motor controller just turn it ON/OFF</td>
+              <td>With the motor controller and the bluetooth</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="img/shema0.png" alt="simple circuit without the bluetooth BY:lostsh"/>
+              </td>
+              <td>
+                <img src="img/shema1.png" alt="V1 of the system BY:lostsh"/>
+              </td>
+              <td>
+                <img src="img/shema2.png" alt="Digital Motor controller BY:lostsh"/>
+              </td>
+            </tr>
+            <tr>
+              <td>Simple schema, for a simple circuit without the bluetooth</td>
+              <td>Complete shema of the V1 of the system</td>
+              <td>Adding a Digital Motor controller</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+
+        <h4>More</h4>
+        <p>For more information, visit the project's <a href="https://github.com/lostsh/openBoat">github page</a>.</p>
+      </section>
+      <nav id="menu">
+        <a href="../../../index.html#menu">Home</a>
+        <a href="../../../index.html#project">Project</a>
+        <a href="../../pages/about.html">About</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+      <footer>
+        <p>lostsh © 2020-2021</p>
+        <p><a href="mailto:0pdlna3@gmail.com">Contact</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

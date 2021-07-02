@@ -1,0 +1,144 @@
+footer{
+    display: none;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.snippetContainer{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1ch;
+}
+.snippet{
+    background-color: #4869ee3f;
+    border: 1px solid #3a4080;
+    border-radius: 4px;
+    width: calc(80vw / 5);
+    height: 20vh;
+    overflow: hidden;
+}
+.snippet:hover{
+    border: 1px solid #d4dcff;
+}
+.snippet h2{
+    text-align: center;
+    display: block;
+}
+.snippet img{
+    width: calc(80vw / 5);
+    border-radius: 7px;
+    opacity: 0.2;
+}
+.snippet p{
+    display: none;
+}
+.snippet span{
+    display: none;
+}
+
+.snippet:hover img{
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+.snippet:hover h2{
+    display: none;
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║        Full Screen         ║
+    ╚════════════════════════════╝
+*/
+
+#fullScreen{
+    margin: 0;
+    padding: 0;
+    /*
+    top: 0;*/
+    position: absolute;
+    width: 100%;
+    /*height: 100vh;*/
+    /*height: 1000vh;*/
+    overflow: hidden;
+    background-color: #171933de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fullScreen h2{
+    position: absolute;
+    display: none;
+}
+#fullScreen span{
+    position: absolute;
+    display: none;
+}
+#fullScreen img{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#fullScreen p{
+    position: absolute;
+    display: none;
+}
+
+/* 
+    ╔════════════════════════════╗ 
+    ║        Media Querry        ║
+    ╚════════════════════════════╝
+*/
+
+@media screen and (max-width: 900px) {
+    .snippetContainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .snippet{
+        width: calc(80vw / 4);
+        height: 15vh;
+    }
+    .snippet img{
+        width: calc(80vw / 4);
+    }
+}
+@media screen and (max-width: 700px){
+    .snippetContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .snippet{
+        width: calc(80vw / 3);
+        height: 15vh;
+    }
+    .snippet img{
+        width: calc(80vw / 3);
+    }
+}
+@media screen and (max-width: 500px){
+    .snippetContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .snippet{
+        width: calc(80vw / 2);
+        height: 15vh;
+    }
+    .snippet img{
+        width: calc(80vw / 2);
+    }
+}
+@media screen and (max-width: 400px){
+    .snippetContainer{
+        grid-template-columns: 1fr;
+    }
+    .snippet{
+        width: 80vw;
+        height: 30vh;
+    }
+    .snippet img{
+        width: 80vw;
+    }
+}
