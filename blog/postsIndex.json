@@ -4,13 +4,25 @@
             "title":"Hang Man Game",
             "url":"posts/2018-11-26/hang-man-game.html",
             "datetime_post":"26/11/2018-15:40",
-            "datetime_update":"01/07/2021-23:40"
+            "datetime_update":"01/07/2021-23:40",
+            "description":"Hangman's game, in C99 and Python3",
+            "thumbnail":"../assets/img/tri_rapide.png"
         },
         {
             "title":"Arduboy Pong Game",
             "url":"posts/2020-02-27/arduboy-pong-game.html",
             "datetime_post":"27/02/2020-15:40",
-            "datetime_update":"01/07/2021-23:40"
+            "datetime_update":"01/07/2021-23:40",
+            "description":"Arduboy version of pong game",
+            "thumbnail":"../assets/img/tri_rapide.png"
+        },
+        {
+            "title":"Test",
+            "url":"../",
+            "datetime_post":"27/02/2020-15:40",
+            "datetime_update":"01/07/2021-23:40",
+            "description":"Fraise sauvage",
+            "thumbnail":"../assets/img/tri_rapide.png"
         }
     ]
 }
