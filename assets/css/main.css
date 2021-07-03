@@ -123,9 +123,15 @@ a:hover{
 }
 
 /* TABLES */
+
 table, th, td{
     border: 1px solid #76708C;
     border-radius: 3px;
+}
+hr{
+    height: 1px;
+    background-color: #76708C;
+    border: 0;
 }
 
 /* 
