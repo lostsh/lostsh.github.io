@@ -122,6 +122,12 @@ a:hover{
     text-decoration-color: #FF9800;
 }
 
+/* TABLES */
+table, th, td{
+    border: 1px solid #76708C;
+    border-radius: 3px;
+}
+
 /* 
     ╔════════════════════════════╗ 
     ║        Layouts class       ║
