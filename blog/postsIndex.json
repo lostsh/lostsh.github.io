@@ -14,15 +14,7 @@
             "datetime_post":"27/02/2020-15:40",
             "datetime_update":"01/07/2021-23:40",
             "description":"Arduboy version of pong game",
-            "thumbnail":"../assets/img/tri_rapide.png"
-        },
-        {
-            "title":"Test",
-            "url":"../",
-            "datetime_post":"27/02/2020-15:40",
-            "datetime_update":"01/07/2021-23:40",
-            "description":"Fraise sauvage",
-            "thumbnail":"../assets/img/tri_rapide.png"
+            "thumbnail":"posts/2020-02-27/img/thumbnail.png"
         }
     ]
 }
