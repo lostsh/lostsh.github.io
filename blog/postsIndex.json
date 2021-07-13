@@ -15,6 +15,38 @@
             "datetime_update":"01/07/2021-23:40",
             "description":"Arduboy version of pong game",
             "thumbnail":"posts/2020-02-27/img/thumbnail.png"
+        },
+        {
+            "title":"Sunny : Tracker solaire",
+            "url":"posts/2019-05-01/sunny-solar-tracker.html",
+            "datetime_post":"01/05/2019-15:40",
+            "datetime_update":"13/07/2021-23:40",
+            "description":"Solar tracker for isn project of terminale (high school).",
+            "thumbnail":"posts/2019-05-01/img/sunny1.jpg"
+        },
+        {
+            "title":"Open Boat",
+            "url":"posts/2020-06-19/open-boat.html",
+            "datetime_post":"19/06/2020-15:40",
+            "datetime_update":"13/07/2021-23:40",
+            "description":"RC boat based on Arduino",
+            "thumbnail":"posts/2020-06-19/img/shema2.png"
+        },
+        {
+            "title":"exploRob",
+            "url":"posts/2020-07-01/exploRob.html",
+            "datetime_post":"01/07/2020-15:40",
+            "datetime_update":"13/07/2021-23:40",
+            "description":"Arduino & Raspberry based Robts",
+            "thumbnail":"posts/2020-07-01/img/bot.JPG"
+        },
+        {
+            "title":"Morpion",
+            "url":"posts/2020-11-20/morpion.html",
+            "datetime_post":"20/11/2020-15:40",
+            "datetime_update":"13/07/2021-23:40",
+            "description":"PHP vanilla based simple Morpion game",
+            "thumbnail":"../assets/img/tri_rapide.png"
         }
     ]
 }
